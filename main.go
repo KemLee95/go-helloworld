@@ -20,7 +20,7 @@ type ResWithData struct {
 
 func main() {
 	log.Print("starting server...")
-	http.HandleFunc("/hello-world", helloWorldHandler)
+	http.HandleFunc("/access", helloWorldHandler)
 	http.HandleFunc("/", handler)
 
 	port := os.Getenv("PORT")
