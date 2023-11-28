@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-east1-docker.pkg.dev/auth2-398306/github.com/kemlee95/go-helloworld', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
